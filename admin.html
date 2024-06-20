@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Soccer League - Admin</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teams.html"><i class="fas fa-users"></i> Teams</a></li>
+                <li><a href="standings.html"><i class="fas fa-trophy"></i> Standings</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                <li><a href="stats.html"><i class="fas fa-chart-line"></i> Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="text-center mb-20">Admin Panel</h2>
+        <div id="login-container">
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="admin-actions" style="display: none;">
+            <h3>Add Team</h3>
+            <form id="team-form">
+                <label for="division">Division:</label>
+                <select id="team-division" name="division">
+                    <option value="2008-2009">2008-2009</option>
+                    <option value="2010-2011">2010-2011</option>
+                    <option value="2012-2013">2012-2013</option>
+                    <option value="2014-2015">2014-2015</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2018-2019">2018-2019</option>
+                </select>
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team-name">
+                <button type="submit">Add Team</button>
+            </form>
+
+            <h3>Add Player</h3>
+            <form id="player-form">
+                <label for="player-division">Division:</label>
+                <select id="player-division" name="division">
+                    <option value="2008-2009">2008-2009</option>
+                    <option value="2010-2011">2010-2011</option>
+                    <option value="2012-2013">2012-2013</option>
+                    <option value="2014-2015">2014-2015</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2018-2019">2018-2019</option>
+                </select>
+                <label for="player-team">Team:</label>
+                <input type="text" id="player-team" name="team">
+                <label for="player-name">Player Name:</label>
+                <input type="text" id="player-name" name="player-name">
+                <button type="submit">Add Player</button>
+            </form>
+
+            <h3>Update Standings</h3>
+            <form id="standings-form">
+                <label for="standings-division">Division:</label>
+                <select id="standings-division" name="division">
+                    <option value="2008-2009">2008-2009</option>
+                    <option value="2010-2011">2010-2011</option>
+                    <option value="2012-2013">2012-2013</option>
+                    <option value="2014-2015">2014-2015</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2018-2019">2018-2019</option>
+                </select>
+                <label for="standings-team">Team:</label>
+                <input type="text" id="standings-team" name="team">
+                <label for="wins">Wins:</label>
+                <input type="number" id="wins" name="wins">
+                <label for="losses">Losses:</label>
+                <input type="number" id="losses" name="losses">
+                <label for="draws">Draws:</label>
+                <input type="number" id="draws" name="draws">
+                <button type="submit">Update Standings</button>
+            </form>
+
+            <h3>Update Player Stats</h3>
+            <form id="stats-form">
+                <label for="stats-division">Division:</label>
+                <select id="stats-division" name="division">
+                    <option value="2008-2009">2008-2009</option>
+                    <option value="2010-2011">2010-2011</option>
+                    <option value="2012-2013">2012-2013</option>
+                    <option value="2014-2015">2014-2015</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2018-2019">2018-2019</option>
+                </select>
+                <label for="stats-player">Player:</label>
+                <input type="text" id="stats-player" name="player">
+                <label for="goals">Goals:</label>
+                <input type="number" id="goals" name="goals">
+                <label for="clean-sheets">Clean Sheets:</label>
+                <input type="number" id="clean-sheets" name="clean-sheets">
+                <label for="yellow-cards">Yellow Cards:</label>
+                <input type="number" id="yellow-cards" name="yellow-cards">
+                <label for="red-cards">Red Cards:</label>
+                <input type="number" id="red-cards" name="red-cards">
+                <button type="submit">Update Stats</button>
+            </form>
+
+            <h3>Edit Schedule</h3>
+            <form id="schedule-form">
+                <label for="schedule-division">Division:</label>
+                <select id="schedule-division" name="division">
+                    <option value="2008-2009">2008-2009</option>
+                    <option value="2010-2011">2010-2011</option>
+                    <option value="2012-2013">2012-2013</option>
+                    <option value="2014-2015">2014-2015</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2018-2019">2018-2019</option>
+                </select>
+                <label for="match-date">Match Date:</label>
+                <input type="date" id="match-date" name="match-date">
+                <label for="team1">Team 1:</label>
+                <input type="text" id="team1" name="team1">
+                <label for="team2">Team 2:</label>
+                <input type="text" id="team2" name="team2">
+                <button type="submit">Add Match</button>
+            </form>
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>

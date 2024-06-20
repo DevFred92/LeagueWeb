@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Soccer League - Stats</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="teams.html"><i class="fas fa-users"></i> Teams</a></li>
+                <li><a href="standings.html"><i class="fas fa-trophy"></i> Standings</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                <li><a href="admin.html"><i class="fas fa-user-cog"></i> Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="text-center mb-20">Player Stats</h2>
+        <label for="stats-division">Select Division:</label>
+        <select id="stats-division">
+            <option value="2008-2009">2008-2009</option>
+            <option value="2010-2011">2010-2011</option>
+            <option value="2012-2013">2012-2013</option>
+            <option value="2014-2015">2014-2015</option>
+            <option value="2016-2017">2016-2017</option>
+            <option value="2018-2019">2018-2019</option>
+        </select>
+        <div id="stats-container">
+            <!-- JavaScript will dynamically insert stats data here -->
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>

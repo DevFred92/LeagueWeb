@@ -1,0 +1,161 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #4169e1;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4169e1;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+select, input[type="text"], input[type="number"], input[type="date"], input[type="password"], input[type="submit"], button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4169e1;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+input[type="submit"], button {
+    background-color: #4169e1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #4169e1;
+}
+
+/* Containers */
+#standings-container, #stats-container, #teams-container, #schedule-container {
+    margin-top: 20px;
+}
+
+#standings-container div, #stats-container div, #teams-container div, #schedule-container div {
+    border: 2px solid #4169e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#standings-container div:hover, #stats-container div:hover, #teams-container div:hover, #schedule-container div:hover {
+    background-color: #4169e1;
+    transform: scale(1.05);
+}
+
+/* Forms */
+form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4169e1;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+form:hover {
+    background-color: #2a2a2a;
+    border: 2px solid #fff;
+}
+
+/* Admin Actions */
+#admin-actions {
+    margin-top: 20px;
+}
+
+#login-container {
+    margin-top: 20px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
